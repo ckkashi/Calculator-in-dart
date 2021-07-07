@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:calculator/calc.dart';
 import 'package:calculator/calculator.dart';
 import 'package:flutter/material.dart';
 
@@ -11,8 +12,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => CalculatorScreen()));
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => Calculator2Screen()));
     });
   }
 
